@@ -200,3 +200,7 @@ class MeiCan(object):
             error = response.json()
             raise MeiCanError('[{}] {}'.format(error.get('error', ''), error.get('error_description', '')))
         return response
+
+    # https://meican.com/preorder/api/v2.1/orders/delete
+    # restoreCart = false & type = CORP_ORDER & uniqueId = 1f7d5a33d565
+
